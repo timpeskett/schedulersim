@@ -108,7 +108,9 @@ the overall understanding.
 	exceptions to it. As a counter example, struct proc is NOT typedef'd
 	as the fields inside it will be directly accessed by unrelated functions.
 
-2. -- Module by Module overview 
+2. -- Module by Module overview     
+
+
 	The common Module   
 		Consists of a single header file that contains common definitions
 	that are required in many files. This allows flags and types to be added
