@@ -32,24 +32,14 @@ in ticks starting at 0.
 ##Original Readme
 The following is the original README written for the assignment:
 
-
-/***********************************************************************\
-*			Operating System 200				*
-*			CPU Scheduling Simulator			*
-*			By Tim Peskett					*
-*-----------------------------------------------------------------------*
-*			README FILE					*
-\***********************************************************************/
-
-
 0. CONTENTS
 -------------------------------------------------------------------------
 0. Contents
 
 1. Compiling and Running
-	1.1 Compiling and Running Part 1
-	1.2 Compiling and Running Part 2
-	1.3 Compiling and Running Part 3
+	1. Compiling and Running Part 1
+	2. Compiling and Running Part 2
+	3. Compiling and Running Part 3
 
 2. Source Code Overview
 
@@ -60,11 +50,7 @@ The following is the original README written for the assignment:
 
 1. COMPILING AND RUNNING
 -------------------------------------------------------------------------
-Note well: The "assignment root directory" referenced from here on is the
-directory that contains the files for the assignment (including this 
-README file).
-
-1.1 -- Steps to compile part 1 (Round robin simulator):
+1. -- Steps to compile part 1 (Round robin simulator):
 	1. Navigate to the assignment root directory
 	2. Use the following sequence of commands to compile part 1
 		cd rr
@@ -74,7 +60,7 @@ README file).
 to run part 1
 		./rr
 
-1.2 -- Steps to compile part 2 (Shortest job first simulator ):
+2. -- Steps to compile part 2 (Shortest job first simulator ):
 	1. Navigate to the assignment root directory
 	2. Use the following sequence of commands to compile part 2
 		cd sjf 
@@ -85,7 +71,7 @@ to run part 2
 		./sjf
 
 
-1.3 -- Steps to compile part 3 (Threaded simulator ):
+3. -- Steps to compile part 3 (Threaded simulator ):
 	1. Navigate to the assignment root directory
 	2. Use the following sequence of commands to compile part 3
 		cd sim
@@ -95,6 +81,9 @@ to run part 2
 to run part 3
 		./sim
 
+Note well: The "assignment root directory" referenced from here on is the
+directory that contains the files for the assignment (including this 
+README file).
 
 
 2. SOURCE CODE OVERVIEW
@@ -105,7 +94,7 @@ The module by module overview will proceed from the bottom up as I feel
 that the basic data structures are used over and over and assist more in
 the overall understanding.
 
-2.1 -- General Comments 
+1. -- General Comments 
 	There is a header file for every c file whose functions 
 	are called by another file. Files that contain an entry point (a main
 	function) tend not to have header files. I call a c file and its 
@@ -119,7 +108,7 @@ the overall understanding.
 	exceptions to it. As a counter example, struct proc is NOT typedef'd
 	as the fields inside it will be directly accessed by unrelated functions.
 
-2.2 -- Module by Module overview 
+2. -- Module by Module overview 
 	The common Module
 		Consists of a single header file that contains common definitions
 	that are required in many files. This allows flags and types to be added
