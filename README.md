@@ -158,7 +158,7 @@ the overall understanding.
 	for an input file, uses the proc module to load the file and then
 	call rrSim(...).
 	
-	The sjf/sjf Module 
+	The sjf/sjf Module    
 		Contains the entry point for part 2. Simply prompts the user
 	for an input file, uses the proc module to load the file and then
 	calls sjfSim(...).
